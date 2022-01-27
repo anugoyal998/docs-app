@@ -20,6 +20,10 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static('build'))
+}
+
 app.get("/", (req, res) => {
   res.send("<h1>Hello world</h1>");
 });

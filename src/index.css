@@ -4,7 +4,7 @@
 
 @layer components{
     .container{
-        @apply w-[60%] bg-white rounded-md mx-auto my-2 h-screen scrollbar-hide !important
+        @apply w-screen md:w-[60%] bg-white rounded-md mx-auto my-2 h-screen scrollbar-hide !important
     }
 }
 
